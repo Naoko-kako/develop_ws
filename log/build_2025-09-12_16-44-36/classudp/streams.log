@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/naoko/develop_ws/build/classudp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12
+[0.027s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.168s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.183s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.189s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.203s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.241s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.242s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.285s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.324s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.389s] -- Configuring done (0.4s)
+[0.396s] -- Generating done (0.0s)
+[0.399s] -- Build files have been written to: /home/naoko/develop_ws/build/classudp
+[0.429s] [ 25%] [32mBuilding CXX object CMakeFiles/catch_subscriber.dir/src/catch_subscriber.cpp.o[0m
+[0.434s] [ 50%] [32mBuilding CXX object CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o[0m
+[2.868s] [ 75%] [32m[1mLinking CXX executable catch_publisher[0m
+[2.977s] [ 75%] Built target catch_publisher
+[4.975s] [100%] [32m[1mLinking CXX executable catch_subscriber[0m
+[5.135s] [100%] Built target catch_subscriber
+[5.145s] Invoked command in '/home/naoko/develop_ws/build/classudp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12
+[5.154s] Invoking command in '/home/naoko/develop_ws/build/classudp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/naoko/develop_ws/build/classudp
+[5.160s] -- Install configuration: ""
+[5.161s] -- Installing: /home/naoko/develop_ws/install/classudp/lib/classudp/catch_publisher
+[5.161s] -- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/install/classudp/lib/classudp/catch_publisher" to ""
+[5.162s] -- Installing: /home/naoko/develop_ws/install/classudp/lib/classudp/catch_subscriber
+[5.164s] -- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/install/classudp/lib/classudp/catch_subscriber" to ""
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/ament_index/resource_index/package_run_dependencies/classudp
+[5.164s] -- Installing: /home/naoko/develop_ws/install/classudp/share/ament_index/resource_index/parent_prefix_path/classudp
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/environment/ament_prefix_path.sh
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/environment/ament_prefix_path.dsv
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/environment/path.sh
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/environment/path.dsv
+[5.164s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/local_setup.bash
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/local_setup.sh
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/local_setup.zsh
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/local_setup.dsv
+[5.165s] -- Installing: /home/naoko/develop_ws/install/classudp/share/classudp/package.dsv
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/ament_index/resource_index/packages/classudp
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/cmake/classudpConfig.cmake
+[5.165s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/cmake/classudpConfig-version.cmake
+[5.166s] -- Up-to-date: /home/naoko/develop_ws/install/classudp/share/classudp/package.xml
+[5.166s] Invoked command in '/home/naoko/develop_ws/build/classudp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/naoko/develop_ws/build/classudp

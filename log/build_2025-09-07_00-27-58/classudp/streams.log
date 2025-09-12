@@ -1,0 +1,13 @@
+[0.008s] Invoking command in '/home/naoko/develop_ws/build/classudp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o[0m
+[1.246s] [01m[K/home/naoko/develop_ws/src/classudp/src/catch_publisher.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[1.246s] [01m[K/home/naoko/develop_ws/src/classudp/src/catch_publisher.cpp:12:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+[1.246s]    12 |     [01;31m[Krclcpp[m[K::WallRate loop(1);
+[1.246s]       |     [01;31m[K^~~~~~[m[K
+[1.249s] [01m[K/home/naoko/develop_ws/src/classudp/src/catch_publisher.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWhile[m[K’ was not declared in this scope
+[1.249s]    13 |     [01;31m[KWhile[m[K(rclcpp::ok()){
+[1.249s]       |     [01;31m[K^~~~~[m[K
+[1.605s] gmake[2]: *** [CMakeFiles/catch_publisher.dir/build.make:76: CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o] Error 1
+[1.605s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/catch_publisher.dir/all] Error 2
+[1.605s] gmake: *** [Makefile:146: all] Error 2
+[1.608s] Invoked command in '/home/naoko/develop_ws/build/classudp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12

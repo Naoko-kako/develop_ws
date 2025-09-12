@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/naoko/develop_ws/build/classudp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12
+[0.029s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.178s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.194s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.199s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.214s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.253s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.254s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.303s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.343s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.409s] -- Configuring done (0.4s)
+[0.416s] -- Generating done (0.0s)
+[0.419s] -- Build files have been written to: /home/naoko/develop_ws/build/classudp
+[0.447s] [ 25%] [32mBuilding CXX object CMakeFiles/catch_subscriber.dir/src/catch_subscriber.cpp.o[0m
+[0.455s] [ 50%] [32mBuilding CXX object CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o[0m
+[0.585s] [01m[K/home/naoko/develop_ws/src/classudp/src/catch_subscriber.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+[0.585s]     3 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+[0.585s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.585s] compilation terminated.
+[0.586s] [01m[K/home/naoko/develop_ws/src/classudp/src/catch_publisher.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+[0.586s]     4 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+[0.586s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.587s] compilation terminated.
+[0.595s] gmake[2]: *** [CMakeFiles/catch_subscriber.dir/build.make:76: CMakeFiles/catch_subscriber.dir/src/catch_subscriber.cpp.o] Error 1
+[0.596s] gmake[2]: *** [CMakeFiles/catch_publisher.dir/build.make:76: CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o] Error 1
+[0.596s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/catch_subscriber.dir/all] Error 2
+[0.596s] gmake[1]: *** Waiting for unfinished jobs....
+[0.596s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/catch_publisher.dir/all] Error 2
+[0.596s] gmake: *** [Makefile:146: all] Error 2
+[0.598s] Invoked command in '/home/naoko/develop_ws/build/classudp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/naoko/develop_ws/build/classudp -- -j12 -l12
