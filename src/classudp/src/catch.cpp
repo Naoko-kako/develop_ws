@@ -1,49 +1,60 @@
-#include "catch.h"
-#include "ps4.hpp"
-#include <iostream>
-#include <vector>
-
-
-using namespace std;
+#include "include/catch.h"
 
 //  初期化
 int Catch::speed_r = 0;
 int Catch::speed_theata = 0;
 
-//  コンストラクタ
-Catch::Catch()  {
-    PS4_Listener::
+std::vector<int16_t> Catch::data(19,0); 
+
+
+void Catch::set_Speed() 
+{
+    std::cout << "R軸の速度を入力:";
+    std::cin >> speed_r;
+    std::cout << "θ軸の速度を入力:";
+    std::cin >> speed_theata;
+    std::cout << "R軸の速度" << speed_r << std::endl;
+    std::cout << "θ軸の速度" << speed_theata << std::endl;
 }
 
 
-void Catch::set_Speed() {
-    cout << "R軸の速度を入力:";
-    cin >> speed_r;
-    cout << "θ軸の速度を入力:";
-    cin >> speed_theata;
-    cout << "R軸の速度" << speed_r << endl;
-    cout << "θ軸の速度" << speed_theata << endl;
+
+/*
+マイコンに送信される配列"data"
+debug: マイコンのprintfを有効化, MD: モータードライバー, TR: トランジスタ
+| data[n] | 詳細 | 範囲 |
+| ---- | ---- | ---- |
+| data[0] | debug | 0 or 1 |
+| data[1] | MD1 | -100 ~ 100 |
+| data[2] | MD2 | -100 ~ 100 |
+| data[3] | MD3 | -100 ~ 100 |
+| data[4] | MD4 | -100 ~ 100 |
+| data[5] | MD5 | -100 ~ 100 |
+| data[6] | MD6 | -100 ~ 100 |
+| data[7] | Servo1 | 0 ~ 180 |
+| data[8] | Servo2 | 0 ~ 180 |
+| data[9] | Servo3 | 0 ~ 180 |
+| data[10] | Servo4 | 0 ~ 180 |
+| data[11] | TR1 | 0 or 1|  //VGOAL
+| data[12] | TR2 | 0 or 1|
+| data[13] | TR3 | 0 or 1|  //ポンプ１
+| data[14] | TR4 | 0 or 1|   //ポンプ２
+| data[15] | TR5 | 0 or 1|  //シリンダ
+| data[16] | TR6 | 0 or 1|
+| data[17] | TR7 | 0 or 1|
+| data[18] | TR8 | 0 or 1|
+
+*/
+
+void Catch::Action(UDP &udp) 
+{
+    std::cout<< "Hello," << std::endl;
+    udp.send(data);
+
 }
 
-void Catch::PS4_main(UDP &udp) {
-    if (PS.) {
-            std::fill(data.begin(), data.end(), 0);          // 配列をゼロで埋める
-            for (int attempt = 0; attempt < 10; attempt++) { // 10回試行
-                udp_.send(data);                             // データ送信
-                std::cout << "緊急停止！ 試行" << attempt + 1
-                          << std::endl; // 試行回数を表示
-                std::this_thread::sleep_for(
-                    std::chrono::milliseconds(100)); // 100msの遅延
-            }
-            rclcpp::shutdown();
-        }
 
-    if(CIRCLE){
-        data[1] = speed_r;
-    }
-    if(TRIANGLE){
-        data[2] = speed_theata;
-    }
+int Catch::getSpeedR() {
+    return speed_r;
 }
-
 
