@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/naoko/develop_ws/src/build/classudp
+[  8%] [32mBuilding CXX object CMakeFiles/catch_subscriber.dir/src/catch_subscriber.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/catch_publisher.dir/src/catch_publisher.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/udp.dir/src/include/UDP.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/udp.dir/src/catch_main.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/udp.dir/src/catch.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/udp.dir/src/PS4.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/udp.dir/src/include/IP.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/my_turtle_controller.dir/src/my_turtle_controll.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable my_turtle_controller[0m
+[ 75%] Built target my_turtle_controller
+[ 83%] [32m[1mLinking CXX executable catch_publisher[0m
+[ 83%] Built target catch_publisher
+[ 91%] [32m[1mLinking CXX executable catch_subscriber[0m
+[ 91%] Built target catch_subscriber
+[100%] [32m[1mLinking CXX executable udp[0m
+[100%] Built target udp
+-- Install configuration: ""
+-- Installing: /home/naoko/develop_ws/src/install/classudp/lib/classudp/catch_publisher
+-- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/src/install/classudp/lib/classudp/catch_publisher" to ""
+-- Installing: /home/naoko/develop_ws/src/install/classudp/lib/classudp/catch_subscriber
+-- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/src/install/classudp/lib/classudp/catch_subscriber" to ""
+-- Installing: /home/naoko/develop_ws/src/install/classudp/lib/classudp/my_turtle_controller
+-- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/src/install/classudp/lib/classudp/my_turtle_controller" to ""
+-- Installing: /home/naoko/develop_ws/src/install/classudp/lib/classudp/udp
+-- Set non-toolchain portion of runtime path of "/home/naoko/develop_ws/src/install/classudp/lib/classudp/udp" to ""
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/ament_index/resource_index/package_run_dependencies/classudp
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/ament_index/resource_index/parent_prefix_path/classudp
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/environment/ament_prefix_path.sh
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/environment/ament_prefix_path.dsv
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/environment/path.sh
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/environment/path.dsv
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/local_setup.bash
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/local_setup.sh
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/local_setup.zsh
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/local_setup.dsv
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/package.dsv
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/ament_index/resource_index/packages/classudp
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/cmake/classudpConfig.cmake
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/cmake/classudpConfig-version.cmake
+-- Installing: /home/naoko/develop_ws/src/install/classudp/share/classudp/package.xml

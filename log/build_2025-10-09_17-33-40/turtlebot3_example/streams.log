@@ -1,0 +1,29 @@
+[1.692s] Invoking command in '/home/naoko/develop_ws/build/turtlebot3_example': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/naoko/develop_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/naoko/develop_ws/build/turtlebot3_example/build --no-deps symlink_data
+[2.408s] running develop
+[2.899s] running egg_info
+[2.901s] creating turtlebot3_example.egg-info
+[2.952s] writing turtlebot3_example.egg-info/PKG-INFO
+[2.953s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[2.954s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[2.954s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[2.955s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[2.955s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[3.075s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[3.077s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[3.128s] running build_ext
+[3.128s] Creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3-example.egg-link (link to .)
+[3.130s] Installing turtlebot3_absolute_move script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.131s] Installing turtlebot3_interactive_marker script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.131s] Installing turtlebot3_obstacle_detection script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.132s] Installing turtlebot3_patrol_client script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.133s] Installing turtlebot3_patrol_server script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.134s] Installing turtlebot3_relative_move script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[3.134s] 
+[3.135s] Installed /home/naoko/develop_ws/build/turtlebot3_example
+[3.135s] running symlink_data
+[3.135s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index
+[3.136s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index
+[3.136s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[3.138s] symbolically linking /home/naoko/develop_ws/build/turtlebot3_example/resource/turtlebot3_example -> /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[3.138s] symbolically linking /home/naoko/develop_ws/build/turtlebot3_example/package.xml -> /home/naoko/develop_ws/install/turtlebot3_example/share/turtlebot3_example
+[3.228s] Invoked command in '/home/naoko/develop_ws/build/turtlebot3_example' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/naoko/develop_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/naoko/develop_ws/build/turtlebot3_example/build --no-deps symlink_data

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-95704dc3657b857fa700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "classudp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "catch_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-catch_publisher-68e0e86dab7d6105abe9.json",
+					"name" : "catch_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "catch_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-catch_subscriber-25982ac763e84400d203.json",
+					"name" : "catch_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "classudp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-classudp_uninstall-1d9cb571188dbb21143c.json",
+					"name" : "classudp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_turtle_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_turtle_controller-b1fe738b2ad3d0e807a4.json",
+					"name" : "my_turtle_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5c5ed6a4d0825ccefba8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/naoko/develop_ws/build/classudp",
+		"source" : "/home/naoko/develop_ws/src/classudp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

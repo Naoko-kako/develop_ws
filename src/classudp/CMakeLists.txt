@@ -33,8 +33,6 @@ add_executable(my_turtle_controller src/my_turtle_controll.cpp)
 target_link_libraries(my_turtle_controller PUBLIC rclcpp::rclcpp ${geometry_msgs_TARGETS})
 #ament_target_dependencies(my_turtle_controller rclcpp std_msgs geometry_msgs
 
-add_executable(ritsmaycan src/catch_main.cpp src/PS4.cpp src/catch.cpp src/include/UDP.cpp src/include/IP.cpp)
-ament_target_dependencies(ritsmaycan rclcpp std_msgs sensor_msgs geometry_msgs)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -56,7 +54,7 @@ install (TARGETS
   catch_publisher
   catch_subscriber
   my_turtle_controller
-  ritsmaycan
+  
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

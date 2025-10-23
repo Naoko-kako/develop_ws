@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/naoko/develop_ws/build/classudp/catch_publisher" "/home/naoko/develop_ws/build/classudp/catch_subscriber" "/home/naoko/develop_ws/build/classudp/my_turtle_controller" "TARGETS" "catch_publisher" "catch_subscriber" "my_turtle_controller" "DESTINATION" "lib/classudp")

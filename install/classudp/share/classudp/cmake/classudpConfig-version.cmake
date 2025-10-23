@@ -1,0 +1,1 @@
+/home/naoko/develop_ws/build/classudp/ament_cmake_core/classudpConfig-version.cmake
