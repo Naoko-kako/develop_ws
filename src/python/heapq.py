@@ -52,10 +52,10 @@ def astar(maze, start, end):
 
     return None
 
-# 経路の表示(メイン関数からの地図コピー)
+# 経路の表示(メイン関数からの地図コピー→経路＊で表示)
 def print_maze_path(maze, path):
     maze_copy = [row[:] for row in maze]
-    for (r, c) in path:
+    for (r, c) in path: 
         maze_copy[r][c] = '*'
     for row in maze_copy:
         print(' '.join(str(x) for x in row))
