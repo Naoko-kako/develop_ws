@@ -58,7 +58,7 @@ def print_maze_path(maze, path):
     for (r, c) in path: 
         maze_copy[r][c] = '*'
     for row in maze_copy:
-        print(' '.join(str(x) for x in row))
+        print(' '.join(str(value) for value in row))
     print()
 
 # 番号の設定
