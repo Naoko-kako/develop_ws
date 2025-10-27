@@ -52,7 +52,7 @@ def astar(maze, start, end):
 
     return None
 
-
+# 迷路の表示
 def print_maze_path(maze, path):
     maze_copy = [row[:] for row in maze]
     for (r, c) in path:
@@ -61,7 +61,7 @@ def print_maze_path(maze, path):
         print(' '.join(str(x) for x in row))
     print()
 
-
+# 番号の設定
 def create_numbering(start_row, start_col, end_row, end_col):
     number_to_pos = {}
     pos_to_number = {}
