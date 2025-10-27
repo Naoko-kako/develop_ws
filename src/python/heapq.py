@@ -40,7 +40,8 @@ def astar(maze, start, end):
             child = Node(current_node, new_pos)
             if child in closed_list:
                 continue
-
+　　　　　　　　
+            # child.h＝マンハッタン距離
             child.g = current_node.g + 1
             child.h = abs(child.position[0] - end_node.position[0]) + abs(child.position[1] - end_node.position[1])
             child.f = child.g + child.h
