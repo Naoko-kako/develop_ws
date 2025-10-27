@@ -1,4 +1,4 @@
-class Node:
+    class Node:
     def __init__(self, parent=None, position=None):
         self.parent = parent
         self.position = position
@@ -30,9 +30,10 @@ def astar(maze, start, end):
 
         for move in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
             new_pos = (current_node.position[0] + move[0], current_node.position[1] + move[1])
-
+　　　　　　　　 # 迷路内の移動に限る
             if not (0 <= new_pos[0] < len(maze) and 0 <= new_pos[1] < len(maze[0])):
                 continue
+             # 移動できる位置に限る（障害物は移動できない）
             if maze[new_pos[0]][new_pos[1]] != 0:
                 continue
 
