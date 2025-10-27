@@ -20,7 +20,7 @@ def astar(maze, start, end):
         open_list.remove(current_node)
         closed_list.append(current_node)
 　　　　　
-　　　　　 # ゴールに到達してれば経路(Path)を表示して終了
+　　　　　 # 目的地に到達していれば経路(Path)を表示して終了
         if current_node == end_node:
             path = []
             while current_node:
@@ -85,7 +85,7 @@ def main():
 
     start = (1, 2)
 
-    # (1,1) 〜 (3,4) に番号を振る
+    # (1,1) 〜 (3,4) に番号を振る-> MF1〜12
     number_to_pos, pos_to_number = create_numbering(1, 1, 4, 3)
 
     print("番号と座標の対応表:")
