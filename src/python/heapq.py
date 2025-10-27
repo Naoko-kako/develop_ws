@@ -83,7 +83,7 @@ def main():
         [1, 0, 0, 0, 1]
     ]
 
-    start = (1, 1)
+    start = (1, 2)
 
     # (1,1) 〜 (3,4) に番号を振る
     number_to_pos, pos_to_number = create_numbering(1, 1, 4, 3)
