@@ -19,7 +19,8 @@ def astar(maze, start, end):
         current_node = min(open_list, key=lambda node: node.f)       # オープンリストの中でF値が一番小さいノードを選ぶ
         open_list.remove(current_node)
         closed_list.append(current_node)
-
+　　　　　
+　　　　　 # ゴールに到達してれば経路(Path)を表示して終了
         if current_node == end_node:
             path = []
             while current_node:
