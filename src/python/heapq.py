@@ -16,7 +16,7 @@ def astar(maze, start, end):
     open_list, closed_list = [start_node], []
 
     while open_list:
-        current_node = min(open_list, key=lambda node: node.f)
+        current_node = min(open_list, key=lambda node: node.f)       # オープンリストの中でF値が一番小さいノードを選ぶ
         open_list.remove(current_node)
         closed_list.append(current_node)
 
