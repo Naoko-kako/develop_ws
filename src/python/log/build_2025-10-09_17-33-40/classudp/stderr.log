@@ -1,0 +1,34 @@
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:[m[K In member function ‘[01m[Kvoid PS4_Listener::[01;32m[Kps4_listener_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:26:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KLS_Y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   26 |         float [01;35m[KLS_Y[m[K = msg->axes[1];
+      |               [01;35m[K^~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:27:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KRS_X[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   27 |         float [01;35m[KRS_X[m[K = -1 * msg->axes[3];
+      |               [01;35m[K^~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:28:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KRS_Y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   28 |         float [01;35m[KRS_Y[m[K = msg->axes[4];
+      |               [01;35m[K^~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:31:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KCIRCLE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   31 |         bool [01;35m[KCIRCLE[m[K = msg->buttons[1];
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:32:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTRIANGLE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   32 |         bool [01;35m[KTRIANGLE[m[K = msg->buttons[2];
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:33:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KSQUARE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   33 |         bool [01;35m[KSQUARE[m[K = msg->buttons[3];
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:35:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KLEFT[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   35 |         bool [01;35m[KLEFT[m[K = msg->axes[6] == 1.0;
+      |              [01;35m[K^~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:36:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KRIGHT[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |         bool [01;35m[KRIGHT[m[K = msg->axes[6] == -1.0;
+      |              [01;35m[K^~~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:37:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KUP[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   37 |         bool [01;35m[KUP[m[K = msg->axes[7] == 1.0;
+      |              [01;35m[K^~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:38:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOWN[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   38 |         bool [01;35m[KDOWN[m[K = msg->axes[7] == -1.0;
+      |              [01;35m[K^~~~[m[K
+[01m[K/home/naoko/develop_ws/src/classudp/src/PS4.cpp:48:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KPS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   48 |         bool [01;35m[KPS[m[K = msg->buttons[10];
+      |              [01;35m[K^~[m[K

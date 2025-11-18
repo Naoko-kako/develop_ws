@@ -1,9 +1,10 @@
 # NHKロボコン2026 
 # R2
-# 経路生成　A*(2次元平面のみ)
+# 経路生成　A*
+# 3次元平面コスト追加
 
-class Node:
-    def __init__(self, parent=None, position=None):
+class Node: 
+    def __init__(self, parent = None, position = None):
         self.parent = parent
         self.position = position
         self.g = 0
@@ -13,18 +14,17 @@ class Node:
     def __eq__(self, other):
         return self.position == other.position
 
-
-def astar(maze, start, end):
+# A* 実装
+def astar(maze, height_map, start, end):
     start_node = Node(None, start)
     end_node = Node(None, end)
     open_list, closed_list = [start_node], []
 
     while open_list:
-        current_node = min(open_list, key=lambda node: node.f)       # オープンリストの中でF値が一番小さいノードを選ぶ
+        current_node = min(open_list, key=lambda node: node.f)
         open_list.remove(current_node)
         closed_list.append(current_node)
 
-         # 目的地に到達していれば経路(Path)を表示して終了
         if current_node == end_node:
             path = []
             while current_node:
@@ -33,7 +33,7 @@ def astar(maze, start, end):
             return path[::-1]
 
         for move in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
-            new_pos = (current_node.position[0] + move[0], current_node.position[1] + move[1])
+            new_pos = (current_node.position[0] + move[0], current_node.position[1] + move[1]) # オープンリストの中でF値が一番小さいノードを選ぶ
              # 迷路内の移動に限る
             if not (0 <= new_pos[0] < len(maze) and 0 <= new_pos[1] < len(maze[0])):
                 continue
@@ -45,10 +45,20 @@ def astar(maze, start, end):
             if child in closed_list:
                 continue
 
+            # 高さの追加 (height = 段差の高さ)
+            height_pos = height_map[current_node.position[0]][current_node.position[1]]
+            height_new = height_map[new_pos[0]][new_pos[1]]            
+            move_cost = calc_step_height(height_pos, height_new, height=0.3)  
+            
+            if move_cost == "wall":
+                continue # 壁、通行不可       
+            print(f"{current_node.position} -> {new_pos}, cost={move_cost}")
+
             # child.h＝マンハッタン距離
-            child.g = current_node.g + 1
+            child.g = current_node.g + move_cost # gのみ高さを考慮
             child.h = abs(child.position[0] - end_node.position[0]) + abs(child.position[1] - end_node.position[1])
             child.f = child.g + child.h
+
 
             if any(open_node for open_node in open_list if child == open_node and child.g > open_node.g):
                 continue
@@ -56,16 +66,37 @@ def astar(maze, start, end):
 
     return None
 
-# 経路の表示(メイン関数からの地図コピー→経路＊で表示)
+# 高さを考慮
+def calc_step_height(height_pos, height_new, height):
+            step = height_new - height_pos
+            # 段差なし
+            if step == 0:
+                return  1
+            # 段差あり
+            if step != 0:    
+                if abs(step) > 3:
+                   return "wall" # 今回は3段以上を壁とする  
+            return  1 + abs(step) * height # 高さ分コストを加える
+
+# 経路を＊で表示
 def print_maze_path(maze, path):
     maze_copy = [row[:] for row in maze]
-    for (r, c) in path: 
+    for (r, c) in path:
         maze_copy[r][c] = '*'
     for row in maze_copy:
-        print(' '.join(str(value) for value in row))
+        print(' '.join(str(x) for x in row))
     print()
 
-# 番号の設定
+def print_height_map(maze, path):
+    maze_copy = [row[:] for row in maze]
+    for (r, c) in path:
+        maze_copy[r][c] = '*'
+    for row in maze_copy:
+        print(' '.join(str(x) for x in row))
+    print()
+
+    
+#　番号の振り分け
 def create_numbering(start_row, start_col, end_row, end_col):
     number_to_pos = {}
     pos_to_number = {}
@@ -78,18 +109,31 @@ def create_numbering(start_row, start_col, end_row, end_col):
     return number_to_pos, pos_to_number
 
 
+ # メイン関数、変更可
 def main():
+
+    # 0行0列は不使用
+    # 障害物を1とする
     maze = [
         [1, 1, 1, 1, 1],
         [1, 0, 0, 0, 1],
         [1, 1, 0, 0, 1],
         [1, 0, 1, 0, 1],
-        [1, 0, 0, 0, 1]
+        [1, 0, 0, 0, 1] 
+    ]
+
+    # 各マスの高さ
+    height_map = [
+        [0, 0, 0, 0, 0],
+        [0, 2, 1, 2, 0],
+        [0, 1, 2, 3, 0],
+        [0, 2, 3, 2, 0],
+        [0, 1, 2, 1, 0]
     ]
 
     start = (1, 2)
 
-    # (1,1) 〜 (3,4) に番号を振る-> MF1〜12
+    # (1,1) 〜 (3,4) に番号を振る
     number_to_pos, pos_to_number = create_numbering(1, 1, 4, 3)
 
     print("番号と座標の対応表:")
@@ -102,7 +146,7 @@ def main():
 
     while True:
         try:
-            inp = input("目的地の番号を入力してください（終了はq）: ")
+            inp = input("目的地の番号を入力してください(終了はq): ")
             if inp.lower() == 'q':
                 print("終了します。")
                 break
@@ -115,7 +159,7 @@ def main():
             goal = number_to_pos[goal_num]
             print(f"目的地: {goal} (番号 {goal_num})")
 
-            path = astar(maze, current, goal)
+            path = astar(maze, height_map, current, goal)
             if path:
                 # 経路の座標リスト path から対応する番号リストを作成
                 path_numbers = [pos_to_number.get(pos, '-') for pos in path]
