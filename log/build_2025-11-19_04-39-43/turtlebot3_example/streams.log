@@ -1,0 +1,82 @@
+[1.118s] Invoking command in '/home/naoko/develop_ws/src/turtlebot3/turtlebot3_example': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/naoko/develop_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/naoko/develop_ws/build/turtlebot3_example/build install --record /home/naoko/develop_ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data
+[1.423s] running egg_info
+[1.423s] creating ../../../build/turtlebot3_example/turtlebot3_example.egg-info
+[1.437s] writing ../../../build/turtlebot3_example/turtlebot3_example.egg-info/PKG-INFO
+[1.437s] writing dependency_links to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/dependency_links.txt
+[1.437s] writing entry points to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/entry_points.txt
+[1.437s] writing requirements to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/requires.txt
+[1.437s] writing top-level names to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/top_level.txt
+[1.437s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.465s] reading manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.465s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.465s] running build
+[1.465s] running build_py
+[1.465s] creating /home/naoko/develop_ws/build/turtlebot3_example/build
+[1.466s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib
+[1.466s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example
+[1.466s] copying turtlebot3_example/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example
+[1.466s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.466s] copying turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.466s] copying turtlebot3_example/turtlebot3_interactive_marker/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.466s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.466s] copying turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.466s] copying turtlebot3_example/turtlebot3_obstacle_detection/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.466s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.467s] copying turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.467s] copying turtlebot3_example/turtlebot3_relative_move/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.467s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.467s] copying turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.467s] copying turtlebot3_example/turtlebot3_absolute_move/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.467s] creating /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.467s] copying turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.467s] copying turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.467s] copying turtlebot3_example/turtlebot3_patrol/__init__.py -> /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.467s] running install
+[1.472s] running install_lib
+[1.486s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example
+[1.486s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.486s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.487s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.487s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example
+[1.487s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.487s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.488s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.488s] creating /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.488s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.488s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.488s] copying /home/naoko/develop_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/__init__.py -> /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.488s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py to turtlebot3_interactive_marker.cpython-312.pyc
+[1.488s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker/__init__.py to __init__.cpython-312.pyc
+[1.489s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py to turtlebot3_obstacle_detection.cpython-312.pyc
+[1.489s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py to __init__.cpython-312.pyc
+[1.489s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py to turtlebot3_relative_move.cpython-312.pyc
+[1.491s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move/__init__.py to __init__.cpython-312.pyc
+[1.491s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/__init__.py to __init__.cpython-312.pyc
+[1.491s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py to turtlebot3_absolute_move.cpython-312.pyc
+[1.492s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move/__init__.py to __init__.cpython-312.pyc
+[1.492s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py to turtlebot3_patrol_server.cpython-312.pyc
+[1.494s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py to turtlebot3_patrol_client.cpython-312.pyc
+[1.494s] byte-compiling /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/__init__.py to __init__.cpython-312.pyc
+[1.494s] running install_data
+[1.494s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index
+[1.494s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index
+[1.495s] creating /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[1.495s] copying resource/turtlebot3_example -> /home/naoko/develop_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[1.495s] copying package.xml -> /home/naoko/develop_ws/install/turtlebot3_example/share/turtlebot3_example
+[1.495s] running install_egg_info
+[1.510s] Copying ../../../build/turtlebot3_example/turtlebot3_example.egg-info to /home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages/turtlebot3_example-2.3.3-py3.12.egg-info
+[1.510s] running install_scripts
+[1.606s] Installing turtlebot3_absolute_move script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] Installing turtlebot3_interactive_marker script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] Installing turtlebot3_obstacle_detection script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] Installing turtlebot3_patrol_client script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] Installing turtlebot3_patrol_server script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] Installing turtlebot3_relative_move script to /home/naoko/develop_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.606s] writing list of installed files to '/home/naoko/develop_ws/build/turtlebot3_example/install.log'
+[1.632s] Invoked command in '/home/naoko/develop_ws/src/turtlebot3/turtlebot3_example' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/naoko/develop_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naoko/develop_ws/install/turtlebot3_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/naoko/develop_ws/build/turtlebot3_example/build install --record /home/naoko/develop_ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data
