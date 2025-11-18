@@ -1,1 +1,0 @@
-/home/naoko/develop_ws/build/classudp/ament_cmake_environment_hooks/local_setup.zsh
