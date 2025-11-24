@@ -1,42 +1,25 @@
-#include astar.h
+#include "astar.h"
 
 
-/* NHKロボコン 2026 
- R2
- 経路生成　A*(C言語) */
-
-#define MAX_NODE 500
-
-//初期設定
-struct NODE{
+typedef struct{
+    
     int row,col;
-    int g,h,f;
-    struct NODE *parent;
-};
-typedef struct NODE NODE;
+    int ;
+    struct ;
 
-//NODEを保管するリスト
-struct LIST{
-    NODE *node[MAX_NODE]; //node[]をmax個数つくる
-    int num; //繰り返す回数
-};
-typedef struct LIST LIST;
+}NODE;
 
-void astar(){
-    //初期化
-    NODE start_node = {0,0,0,0,0,NULL};
-    NODE end_node = {0,0,0,0,0,NULL};
-    LIST *open_list = {.num = 0};
+typedef struct{
 
-    for(num = 1, num < MAX_NODE, num++){
-       
-    }
+    int ;
+    NODE *node;
 
-    if(open == 1){
+}LIST;
 
-    }
-}
 
-int main() {
+   
+int main(){
+    
+    printf();
     return 0;
 }

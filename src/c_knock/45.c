@@ -15,7 +15,7 @@ int main(){
             if(i == 0){
                 count = count;
             }
-            else if(i =! 0){
+            else if(i != 0){
                 count = count + 1;
             }
             else{}
