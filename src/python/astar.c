@@ -1,25 +1,31 @@
-#include "astar.h"
+#include <stdio.h>
 
-
-typedef struct{
-    
+#define NODE_MAX 1000
+/*
+g(n) = スタートから n までの累積コスト
+h(n) = n からゴールまでの推定コスト（ヒューリスティック）
+f(n) = g(n) + h(n)
+*/
+typedef struct Node{
     int row,col;
-    int ;
-    struct ;
+    int f;
+    int g;
+    int h;
+    struct Node *parent;
+}Node;
 
-}NODE;
+typedef struct List{
+    int index;
+    Node *node[NODE_MAX];
+}List;
 
-typedef struct{
-
-    int ;
-    NODE *node;
-
-}LIST;
+void search(List *open,List *close){
 
 
-   
+}
+
+
+
 int main(){
-    
-    printf();
     return 0;
 }

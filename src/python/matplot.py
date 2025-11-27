@@ -28,10 +28,10 @@ def plot_3d_maze_path(height_map, path):
             if h == 2.0:
                 color = 'green'  # 緑
             if path and (r, c) in path:
-                color = 'yellow'
+                color = 'red'
              
             ax.bar3d(c, r, z, dx, dy, h, color=color, alpha=0.7)
-            ax.set_box_aspect((1,1, 0.2))
+            ax.set_box_aspect((1,1, 0.1))
        # 経路を線で描く
   
     ax.set_xlabel('X')
@@ -154,21 +154,21 @@ def main():
     maze = [
         [1, 1, 1, 1, 1],
         [1, 0, 0, 0, 1],
-        [1, 1, 0, 0, 1],
-        [1, 0, 1, 0, 1],
+        [1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 1],
         [1, 0, 0, 0, 1] 
     ]
 
     # 各マスの高さ
     height_map = np.array([
         [0, 0, 0, 0, 0],
-        [0, 2, 1, 2, 0],
-        [0, 1, 2, 3, 0],
-        [0, 2, 3, 2, 0],
-        [0, 1, 2, 1, 0]
+        [0, 1, 0, 1, 0],
+        [0, 0, 1, 2, 0],
+        [0, 1, 2, 1, 0],
+        [0, 0, 1, 0, 0]
     ])
 
-    start = (1, 1)
+    start = (1, 2)
 
     # (1,1) 〜 (3,4) に番号を振る
     number_to_pos, pos_to_number = create_numbering(1, 1, 4, 3)
